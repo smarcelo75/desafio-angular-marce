@@ -1,5 +1,9 @@
-# Angular Desafio 1 - Marce Serrano
+# Angular Desafio 2 - Marce Serrano
 
+## Listado de Alumnos con filtros aplicados
+### Interpolación
+### Directivas
+### Pipes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
