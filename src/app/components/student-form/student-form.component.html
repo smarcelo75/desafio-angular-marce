@@ -1,0 +1,21 @@
+<form [formGroup]="formStudent" (ngSubmit)="onSubmit()" class="row g-3">
+    <div class="col-md-12">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input [class.is-valid]="nombreControl?.valid" [class.is-invalid]="nombreControl?.invalid" formControlName="nombre" type="text" class="form-control" id="nombre">
+    </div>
+    <div class="col-md-12">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input [class.is-valid]="apellidoControl?.valid" [class.is-invalid]="apellidoControl?.invalid" formControlName="apellido" type="text" class="form-control" id="apellido">
+    </div>
+    <div class="col-6">
+        <label for="curso" class="form-label">Curso</label>
+        <input [class.is-valid]="cursoControl?.valid" [class.is-invalid]="cursoControl?.invalid" formControlName="curso" type="text" class="form-control" id="curso">
+    </div>
+    <div class="col-6">
+        <label for="nota" class="form-label">Nota</label>
+        <input [class.is-valid]="notaControl?.valid" [class.is-invalid]="notaControl?.invalid" formControlName="nota" type="number" class="form-control" id="nota" min="0" max="10">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </div>
+</form>

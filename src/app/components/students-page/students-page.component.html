@@ -1,23 +1,19 @@
 <div class="container-fluid py-3">
     <h2>Listado de estudiantes</h2>
 
+    <button class="btn btn-success">Nuevo</button>
+
     <select (change)="onselectChange($event)" class="form-control form-select">
         <option value="todos">Todos</option>
         <option value="aprobados">Aprobados</option>
         <option value="no_aprobados">No aprobados</option>
-    </select> 
-    
-    @switch (selectedFilter) { 
-        @case ('todos') {
-        <p class="mt-1">Se listan todos los estudiantes con las notas promedios del ciclo lectivo</p>
-        } 
-        @case ('aprobados') {
-        <p class="mt-1">Se listan los estudiantes aprobados</p>
-        } 
-        @case ('no_aprobados') {
-        <p class="mt-1">Se listan los estudiantes que no aprobaron</p>
-        }
-    }
+    </select> @switch (selectedFilter) { @case ('todos') {
+    <p class="mt-1">Se listan todos los estudiantes con las notas promedios del ciclo lectivo</p>
+    } @case ('aprobados') {
+    <p class="mt-1">Se listan los estudiantes aprobados</p>
+    } @case ('no_aprobados') {
+    <p class="mt-1">Se listan los estudiantes que no aprobaron</p>
+    } }
 
     <table class="table table-striped-columns mt-1">
         <thead>
