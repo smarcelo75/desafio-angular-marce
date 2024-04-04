@@ -37,7 +37,7 @@ export class StudentFormComponent {
 
   onSubmit(): void {
     if(this.formStudent.valid){
-      Swal.fire('Estudiante creado' + JSON.stringify(this.formStudent.value));
+      Swal.fire('Estudiante creado ' + JSON.stringify(this.formStudent.value));
     }
   }
 }
